@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delivery food - доставка еды на дом</title>
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body id="auth-page">
+  <div class="container">
+    <!-- Шапка сайта -->
+    <header class="header">
+    <!-- Логотип -->
+    <a href="index.html" class="logo"><img src="img/logo.svg" alt="Logo" class="logo animated fadeInRight"></a>
+      <input name='search' type="text" class="input input-address" placeholder="Поиск блюда">
+      <div class="buttons">
+        <button onclick="window.location.href='auth.html'" class="button button-primary">
+            <img src="img/user.svg" alt="User" class="button-icon">
+            <span class="button-text">Войти</span></button>
+        <button class="button">
+            <img src="img/shopping-cart.svg" alt="shopping-cart" class="button-icon" id="cart-button">
+            <span class="button-text">Корзина</span></button>
+      </div>
+    </header>
+
+  </div>
+  <section class="auth" id="reg">
+    <div class="container">
+      <div class="auth-wrapper">
+        <div class="auth-image">
+          <a href="index.html" class="logo-link">
+            <img class="auth-logo" src="img/auth-logo.svg" alt="Icon: logo">
+          </a>
+        </div>
+        <form action="" class="reg-form">
+          <div class="input-wrapper input--active" id="signUpInput">
+            <h2 class="input-header">Укажите электронную почту</h2>
+            <input type="text" class="auth-input" name="email" type="email" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" required>
+          </div>
+          <div class="input-wrapper input--active" id="signUpInput">
+            <h2 class="input-header">Введите пароль</h2>
+            <input type="text" class="auth-input password1" type="password" required minlength="4">
+          </div>
+          <div class="input-wrapper input--active" id="signUpInput">
+            <h2 class="input-header">Повторите пароль</h2>
+            <input type="text" class="auth-input password2" type="password" required minlength="4">
+          </div>
+          <div class="input-wrapper input--active" id="signUpInput">
+            <h2 class="input-header">Введите номер телефона</h2>
+            <input type="text" class="auth-input" name="phone" required>
+          </div>
+          <button class="auth-btn" id="signUpBtn">Зарегистрироваться</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-block">
+            <img src="img/logo.svg" alt="logo" class="logo footer-logo">
+            <nav class="footer-nav">
+                <a href="#" class="footer-link">Рестораны</a>
+                <a href="#" class="footer-link">Курьерам</a>
+                <a href="#" class="footer-link">Пресс-центр</a>
+                <a href="#" class="footer-link">Контакты</a>
+            </nav>
+            <div class="social-links">
+                <a href="#" class="social-link"><img src="img/Group 1.svg" alt="instagram"></a>
+                <a href="#" class="social-link"><img src="img/Group 2.svg" alt="facebook"></a>
+                <a href="#" class="social-link"><img src="img/Group 3.svg" alt="vk"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

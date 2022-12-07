@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delivery food - доставка еды на дом</title>
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Шапка сайта -->
+    <header class="header">
+    <!-- Логотип -->
+    <a href="index.html" class="logo"><img src="img/logo.svg" alt="Logo" class="logo animated fadeInRight"></a>
+    <input type="text" class="input input-address" placeholder="Адрес доставки">
+      <div class="buttons">
+        <button onclick="window.location.href='auth.html'" class="button button-primary">
+            <img src="img/user.svg" alt="User" class="button-icon">
+            <span class="button-text">Войти</span></button>
+        <button class="button">
+            <img src="img/shopping-cart.svg" alt="shopping-cart" class="button-icon" id="cart-button">
+            <span class="button-text">Корзина</span></button>
+      </div>
+    </header>
+
+  </div>
+
+  <div class="container cart__container">
+    <div class="cart__header">
+      <h3 class="cart__header--title">Наименование</h3>
+      <h3 class="cart__header--title">Изображение</h3>
+      <h3 class="cart__header--title">Цена</h3>
+      <h3 class="cart__header--title">Количество</h3>
+      <h3 class="cart__header--title">Общая цена</h3>
+    </div>
+    <div class="cart__point">
+      <div class="cart__item">
+        <p class="cart__desc">Маргарита</p>
+      </div>
+      <div class="cart__item">
+        <img src="img/image.jpg" alt="Image: item" class="cart__desc cart__image">
+      </div>
+      <div class="cart__item">
+        <p class="cart__desc">200 руб.</p>
+      </div>
+      <div class="cart__item">
+        <p class="cart__desc">X1</p>
+      </div>
+      <div class="cart__item">
+        <p class="cart__desc">200</p>
+        <button class="cart__btn--del">Удалить</button>
+      </div>
+    </div>
+    <div class="cart__point">
+      <div class="cart__item">
+        <p class="cart__desc">Маргарита</p>
+      </div>
+      <div class="cart__item">
+        <img src="img/image.jpg" alt="Image: item" class="cart__desc cart__image">
+      </div>
+      <div class="cart__item">
+        <p class="cart__desc">200 руб.</p>
+      </div>
+      <div class="cart__item">
+        <p class="cart__desc">X1</p>
+      </div>
+      <div class="cart__item">
+        <p class="cart__desc">200</p>
+        <button class="cart__btn--del">Удалить</button>
+      </div>
+    </div>
+    <div class="cart__buttons">
+      <p class="cart__pricetag">Общая стоимость: 400 руб.</p>
+      <button class="cart__btn">Оформить заказ</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-block">
+            <img src="img/logo.svg" alt="logo" class="logo footer-logo">
+            <nav class="footer-nav">
+                <a href="#" class="footer-link">Рестораны</a>
+                <a href="#" class="footer-link">Курьерам</a>
+                <a href="#" class="footer-link">Пресс-центр</a>
+                <a href="#" class="footer-link">Контакты</a>
+            </nav>
+            <div class="social-links">
+                <a href="#" class="social-link"><img src="img/Group 1.svg" alt="instagram"></a>
+                <a href="#" class="social-link"><img src="img/Group 2.svg" alt="facebook"></a>
+                <a href="#" class="social-link"><img src="img/Group 3.svg" alt="vk"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

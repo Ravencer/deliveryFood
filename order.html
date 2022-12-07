@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delivery food - доставка еды на дом</title>
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Шапка сайта -->
+    <header class="header">
+    <!-- Логотип -->
+    <a href="index.html" class="logo"><img src="img/logo.svg" alt="Logo" class="logo animated fadeInRight"></a>
+    <input type="text" class="input input-address" placeholder="Адрес доставки">
+      <div class="buttons">
+        <button onclick="window.location.href='auth.html'" class="button button-primary">
+            <img src="img/user.svg" alt="User" class="button-icon">
+            <span class="button-text">Войти</span></button>
+        <button class="button">
+            <img src="img/shopping-cart.svg" alt="shopping-cart" class="button-icon" id="cart-button">
+            <span class="button-text">Корзина</span></button>
+      </div>
+    </header>
+
+  </div>
+  <div class="container order__container">
+    <h2 class="order__headline">Оформление заказа</h2>
+    <form action="" class="order__form">
+      <div class="order__block">
+        <h3 class="order__subtext">ФИО</h3>
+        <input type="text" class="order__input">
+      </div>
+      <div class="order__block">
+        <h3 class="order__subtext">Адрес доставки</h3>
+        <input type="text" class="order__input">
+      </div>
+      <div class="order__block">
+        <h3 class="order__subtext">Ваш номер телефона</h3>
+        <input type="text" class="order__input">
+      </div>
+      <div class="order__block">
+        <h3 class="order__subtext">Ваш Email</h3>
+        <input type="text" class="order__input">
+      </div>
+      <div class="order__block">
+        <h3 class="order__subtext">Способ оплаты</h3>
+        <select class="order__select">
+          <option value="1">Наличными</option>
+          <option value="2">Безналичный рассчет</option>
+          <option value="3">Перевод курьеру</option>
+        </select>
+      </div>
+      <div class="order__block">
+        <h3 class="order__subtext">Способ получения</h3>
+        <select class="order__select">
+          <option value="1">Доставка</option>
+          <option value="2">Самовывоз</option>
+        </select>
+      </div>
+      <div class="order__block">
+        <h3 class="order__subtext">Комментарий к заказу</h3>
+        <textarea  class="order__text"></textarea>
+      </div>
+    </form>
+    <div class="cart__buttons">
+      <p class="cart__pricetag">Итоговая стоимость: 400 руб.</p>
+      <button class="cart__btn">Подтвердить</button>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-block">
+            <img src="img/logo.svg" alt="logo" class="logo footer-logo">
+            <nav class="footer-nav">
+                <a href="#" class="footer-link">Рестораны</a>
+                <a href="#" class="footer-link">Курьерам</a>
+                <a href="#" class="footer-link">Пресс-центр</a>
+                <a href="#" class="footer-link">Контакты</a>
+            </nav>
+            <div class="social-links">
+                <a href="#" class="social-link"><img src="img/Group 1.svg" alt="instagram"></a>
+                <a href="#" class="social-link"><img src="img/Group 2.svg" alt="facebook"></a>
+                <a href="#" class="social-link"><img src="img/Group 3.svg" alt="vk"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

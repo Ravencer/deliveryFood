@@ -1,0 +1,41 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% load widget_tweaks %}
+{% block title %}
+Авторизация
+{% endblock %}
+{% block content %}
+    {% if form.errors %}
+        <p>
+            Неверное имя пользователя или пароль! Попробуйте ещё раз.
+        </p>
+    {% endif %}
+  <section class="auth" id="auth-page">
+    <div class="container">
+    <form action="{% url 'login' %}" method="post">
+            {% csrf_token %}
+      <div class="auth-wrapper">
+        <div class="auth-image">
+          <a href="{% url 'home' %}" class="logo-link">
+            <img class="auth-logo" src="{% static 'img/auth-logo.svg' %}" alt="Icon: logo">
+          </a>
+        </div>
+        <div class="input-wrapper input--active" id="signInInput">
+          <h2 class="input-header ">Логин</h2>
+            {{ form.username|add_class:'auth-input' }}
+        </div>
+        <div class="input-wrapper input--active" id="signInInput">
+            <h2 class="input-header ">Пароль</h2>
+          {{ form.password|add_class:'auth-input' }}
+        </div>
+        <a href="{% url 'password_reset' %}" class="password-reset">Забыли пароль?</a>
+        <button type='submit' class="auth-btn" id="signInBtn">Войти</button>
+          <input type="hidden" name="next" value="{{ next }}"/>
+      </div>
+    </form>
+        <a href="{% url 'register' %}">
+        <button class="auth-btn" id="signUpBtn">Зарегистрироваться</button>
+        </a>
+    </div>
+  </section>
+{% endblock %}

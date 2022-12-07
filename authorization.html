@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delivery food - доставка еды на дом</title>
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body id="auth-page">
+  <div class="container">
+    <!-- Шапка сайта -->
+    <header class="header">
+    <!-- Логотип -->
+    <a href="index.html" class="logo"><img src="img/logo.svg" alt="Logo" class="logo animated fadeInRight"></a>
+      <input name='search' type="text" class="input input-address" placeholder="Поиск блюда">
+      <div class="buttons">
+        <button class="button button-primary">
+            <img src="img/user.svg" alt="User" class="button-icon">
+            <span class="button-text">Войти</span></button>
+        <button class="button">
+            <img src="img/shopping-cart.svg" alt="shopping-cart" class="button-icon" id="cart-button">
+            <span class="button-text">Корзина</span>
+        </button>
+      </div>
+    </header>
+
+  </div>
+  <section class="auth">
+    <div class="container auth-container">
+      <form action="" class="form-auth reg-form">
+        <div class="auth-wrapper">
+          <div class="auth-image">
+            <a href="index.html" class="logo-link">
+              <img class="auth-logo" src="img/auth-logo.svg" alt="Icon: logo">
+            </a>
+          </div>
+          <div class="input-wrapper input--active" id="signInInput">
+            <h2 class="input-header ">Электронная почта</h2>
+            <input type="text" class="auth-input">
+          </div>
+          <div class="input-wrapper input--active" id="signInInput">
+            <h2 class="input-header ">Пароль</h2>
+            <input type="text" class="auth-input">
+          </div>
+          <a href="#" class="password-reset">Забыли пароль?</a>
+          <button class="auth-btn" id="signInBtn" type="button">Войти</button>
+        </div>
+      </form>
+      <a href="registration.html" class="auth-link"><button class="auth-btn" id="signUpBtn">Зарегистрироваться</button></a>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-block">
+            <img src="img/logo.svg" alt="logo" class="logo footer-logo">
+            <nav class="footer-nav">
+                <a href="#" class="footer-link">Рестораны</a>
+                <a href="#" class="footer-link">Курьерам</a>
+                <a href="#" class="footer-link">Пресс-центр</a>
+                <a href="#" class="footer-link">Контакты</a>
+            </nav>
+            <div class="social-links">
+                <a href="#" class="social-link"><img src="img/Group 1.svg" alt="instagram"></a>
+                <a href="#" class="social-link"><img src="img/Group 2.svg" alt="facebook"></a>
+                <a href="#" class="social-link"><img src="img/Group 3.svg" alt="vk"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+  
+<script src="js/auth.js"></script>
+</body>
+</html>
