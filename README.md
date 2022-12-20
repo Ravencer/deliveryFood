@@ -14,7 +14,7 @@
 5. Адаптивность на различных устройствах (ПК, ноутбук, планшет, смартфон и т. д.)
 
 ## Customer Journey Map
-<img width="600" alt="Customer Journey Map (Community)" src="https://user-images.githubusercontent.com/95750854/208128496-da425b1b-7013-4c35-a9c6-27b21c2581a6.png">
+<img width="600" alt="Customer Journey Map (Community)" src="documents/CJM_Delivery_Food.pdf">
 
 # [Ссылка на Figma](https://www.figma.com/file/2vA1Ejt1H67r6AJNlqnLW6/Delivery-Food?node-id=230%3A22216&t=qxoWq2I0U3IsuYWn-1)
 
